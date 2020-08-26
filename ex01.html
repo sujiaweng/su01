@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<div id="ex01">
+		<terms-of-service></terms-of-service>
+	</div>
+	<script>
+		Vue.component('terms-of-service', {
+	template: `
+	  <div v-once>
+		<h1>Terms of Service</h1>
+		... a lot of static content ...
+	  </div>
+	`
+  })
+  new Vue({
+	  el:'#ex01',
+  })
+	</script>
+</body>
+</html>
+
